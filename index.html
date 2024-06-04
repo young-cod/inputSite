@@ -27,6 +27,25 @@
 
       <label for="birthdate">Your birthdate</label>
       <input type="date" name="user-birthdate" id="birthdate" />
+      <hr />
+      <h2>How should we verify your account?</h2>
+      <div class="form-control-inline">
+        <input
+          type="radio"
+          name="verify"
+          id="verify-text-message"
+          value="verify-text"
+        />
+        <label for="verify-text-message">via text message (SMS)</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="verify-phone" value="phone" />
+        <label for="verify-phone">via a phone call</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="verify-email" value="email" />
+        <label for="verify-email">via an email</label>
+      </div>
       <button>Submit</button>
     </form>
   </body>
